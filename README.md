@@ -42,6 +42,6 @@ found below:
 
 ## Notebooks
 
-### [example_usage.ipynb](https://github.com/CarlosSMWolff/ParamEst-NN/blob/main/notebooks/1-Trajectories_generation.ipynb)
+### [example_usage.ipynb](https://github.com/CarlosSMWolff/GS_Scrape/blob/main/notebooks/example_usage.ipynb)
 
 Notebook with example usage: download the papers as a dataframe and use it to generate a LaTeX snippet for your CV.
