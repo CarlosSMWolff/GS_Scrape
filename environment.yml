@@ -1,0 +1,7 @@
+name: gsscrape
+channels:
+  - conda-forge
+dependencies:
+  - pandas
+  - pip:
+      - selenium==4.27.1
