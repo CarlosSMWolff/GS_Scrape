@@ -2,6 +2,7 @@
 
 
 This repository provides tools for scraping publication data from Google Scholar and generating formatted LaTeX reports. The package includes both Python functions for programmatic use and a command-line interface (CLI) for quick scraping.
+This tool does not depend on an API; it uses Selenium to manually navigate across the pages and extract the desired information.
 
 ---
 
