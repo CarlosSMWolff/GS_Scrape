@@ -11,6 +11,9 @@ This tool does not depend on an API; it uses Selenium to manually navigate acros
 - **Google Scholar Scraping**: Extract detailed information about publications, including title, authors, journal, year, citations, and more.
 - **Pseudonym Handling**: Unify author names across variations (e.g., "C S Munoz" → "C. Sánchez Muñoz").
 - **LaTeX Report Generation**: Automatically generate LaTeX-formatted lists of publications and summary statistics for academic CVs or reports.
+
+<p align="center"><img src="report.png"  align=middle width=600pt />
+</p>
 - **Command-Line Interface**: Easily scrape Google Scholar data and save it to a CSV file directly from the terminal.
 ---
 
