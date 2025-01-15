@@ -14,6 +14,7 @@ This tool does not depend on an API; it uses Selenium to manually navigate acros
 
 <p align="center"><img src="report.png"  align=middle width=600pt />
 </p>
+
 - **Command-Line Interface**: Easily scrape Google Scholar data and save it to a CSV file directly from the terminal.
 ---
 
