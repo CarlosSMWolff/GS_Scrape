@@ -92,6 +92,9 @@ python gsscrape/scraper.py --scholar_id="-VPPZ8YAAAAJ" --name "C. Sánchez Muño
   The canonical name of the author to highlight in the authors' list. Example: `"C. Sánchez Muñoz"`.
 
 - `--pseudonyms` *(required)*:  
+    A list of pseudonyms to unify (e.g., "C S Munoz", "C S Muñoz").
+
+- `--output` *(optional)*:  Name of the output CSV file (default: `papers.csv`).
 
 
 ## Notebooks
