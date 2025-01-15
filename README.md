@@ -81,7 +81,7 @@ You can run the scraper directly from the terminal to scrape Google Scholar data
 
 #### Example Command:
 ```bash
-python gsscrape/scraper.py --scholar_id "-VPPZ8YAAAAJ" --name "C. Sánchez Muñoz" --pseudonyms "C S Munoz" "C S Muñoz" --output papers.csv
+python gsscrape/scraper.py --scholar_id="-VPPZ8YAAAAJ" --name "C. Sánchez Muñoz" --pseudonyms "C S Munoz" "C S Muñoz" --output papers.csv
 ```
 #### Arguments:
 - `--scholar_id` *(required)*:  
