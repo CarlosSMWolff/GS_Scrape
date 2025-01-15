@@ -43,6 +43,56 @@ found below:
 - [`conda`](https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html)
 - [`miniconda`](https://docs.conda.io/en/latest/miniconda.html)
 
+## Usage Examples
+
+This package can be used programmatically in Python scripts or notebooks, or directly from the terminal via its command-line interface (CLI).
+
+---
+
+### 1. Programmatic Use
+
+Import the provided functions into your Python scripts or Jupyter notebooks:
+
+```python
+from gsscrape.scraper import getGSdata
+from gsscrape.reporter import generate_latex_report
+
+# Scrape data from Google Scholar
+df_papers = getGSdata(
+    scholarUserId="-VPPZ8YAAAAJ",  # Replace with your Google Scholar ID
+    name="C. Sánchez Muñoz",       # The canonical name of the author
+    pseudonyms=["C S Munoz", "C S Muñoz"]  # Alternate names to unify
+)
+
+# Save the scraped data to a CSV file
+df_papers.to_csv("papers.csv", index=False)
+
+# Generate a LaTeX report
+generate_latex_report(
+    df_papers=df_papers, 
+    name="C. Sánchez Muñoz", 
+    output_file="publications_report.tex"
+)
+
+
+### 2. Command-Line Interface (CLI)
+
+You can run the scraper directly from the terminal to scrape Google Scholar data and save it as a CSV file.
+
+#### Example Command:
+```bash
+python gsscrape/scraper.py --scholar_id "-VPPZ8YAAAAJ" --name "C. Sánchez Muñoz" --pseudonyms "C S Munoz" "C S Muñoz" --output papers.csv
+
+#### Arguments:
+- `--scholar_id` *(required)*:  
+  The Google Scholar user ID. This is a unique identifier for the author, e.g., `-VPPZ8YAAAAJ`.  
+  Ensure the ID is enclosed in quotes if it starts with a dash (`-`).
+
+- `--name` *(required)*:  
+  The canonical name of the author to highlight in the authors' list. Example: `"C. Sánchez Muñoz"`.
+
+- `--pseudonyms` *(required)*:  
+
 
 ## Notebooks
 
